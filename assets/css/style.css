@@ -1,0 +1,85 @@
+/* Resetando valores padrões */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Configuração do Header */
+.header {
+    height: 60vh;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #004b50;
+    background-clip: border-box;
+    max-height: 327px;
+}
+
+/* Titulo do Header */
+.title_header {
+    padding-top: 10%;
+    color: #fff;
+    font-size: 1em;
+}
+
+/* Uma div apenas para separar */
+.separation {
+    height: 20px;
+    border-bottom: 2px solid rgba(0, 75, 80, 0.42);
+    margin-bottom: 10px;
+}
+
+/* Imagens das Pessoas redondas */
+.img-prof, .img-aluno {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Linha que fica na frente de LISTAS */
+.linha {
+    width: 80%;
+    height: 2px;
+    border: 2px solid;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+/*  Borda acima de Footer */
+.footer {
+    border-top: 2px solid;
+}
+
+/* Mudança da cor do Menmu Info quando clicado */
+#link-descricao.active {
+    background-color: #004b50;
+}
+
+/* Fax com que o texto dentro da Div não transborde */
+#no_trasnbord {
+    max-height: 116px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#imgLogo {
+    width: 100%;
+    min-width: 290px;
+}
+
+#notification {
+    width: 50%;
+}
+
+#exercicios.active {
+    background: #3a9d49;
+}
+
+.form-check .form-check-input:checked~.form-check-sign .check {
+    background: #4caf50;
+}
+
+#valores:first-child {
+    border: 2px solid red;
+}
