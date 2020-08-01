@@ -16,9 +16,8 @@
     <!-- My Style -->
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
 
-    <script>
-        
-    </script>
+
+
 
 </head>
 
@@ -63,19 +62,33 @@
                 <div class="row justify-content-center">
                     <div class="col-4">
                         <div class="form-group bmd-form-group text-left">
-                            <label for="addvalor" class="bmd-label-floating">Elemento</label>
+                            <label for="addvalor" class="bmd-label-floating">Adicione um Valor</label>
                             <input id="addvalor" type="text" class="form-control" name="addvalor">
                         </div>
                     </div>
                 </div>
              
                 <p>
-                    <button id="btn" type="button" class="btn btn-success" onclick="newConjunto()">Criar Conjunto</button>
+                    <button id="btn" type="button" class="btn btn-success" onclick="newSet()">Criar Conjunto</button>
                     <button id="btn" type="button" class="btn btn-success" onclick="newValue()">Adiciona Valor</button>
+                    <button id="btn" type="button" class="btn btn-success" onclick="removeValue()">Remover Valor</button>
+                    <button id="btn" type="button" class="btn btn-success" onclick="emptyItems()">Limpar</button>
+                    <button id="btn" type="button" class="btn btn-success" onclick="emptySet()">Apagar</button>
+                    <button id="btn" type="button" class="btn btn-success" onclick="sizeSet()">Tamanho</button>
                 </p>
                 <div class="row justify-content-center">
-                    <div class="col">
-                        <p id="apresentaConjunto"></p>
+                    <div class="col-2">
+                        <label for="exampleFormControlSelect1">Selecione um Conjunto</label>
+                        <select id="apresentaConjunto" onchange="exibeValues()">
+                            <option>Vazio</option>
+                        </select>
+                    </div>
+                </div> 
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <p id="resposta">
+
+                        </p>
                     </div>
                 </div>  
             </div>
@@ -113,7 +126,6 @@
         </div>
     </div>
   
-    
 
     <!--   Core JS Files   -->
     <script src="../../assets/js/core/jquery.min.js" type="text/javascript"></script>
