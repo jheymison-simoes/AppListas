@@ -179,7 +179,14 @@ function addButton(){
 
         // se o tipo for diferente da erro
         if(teste == true){
-            msg = "O valor " + valor + " não foi adicionado! Tipo Diferente! apenas Tipos " + type + " são aceitos. Para um novo tipo esvazie a pilha!";
+            let type_permit;
+            if(type == "Number"){
+                type_permit = "String";
+            } else {
+                type_permit = "Number";
+            }
+
+            msg = "O valor " + valor + " não foi adicionado! Tipo Diferente! apenas Tipos " + type_permit + " são aceitos. Para um novo tipo esvazie a pilha!";
             tipo = "alert-warning";
             document.getElementById("avisos").innerHTML = notification(msg, tipo);
             teste = false;
